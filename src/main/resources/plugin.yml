@@ -1,0 +1,57 @@
+name: FinishedGamemodes
+version: '${project.version}'
+main: pl.olafcio.mc.finishedgamemodes.FinishedGamemodes
+api-version: 1.19
+prefix: FinishedGamemodes
+load: STARTUP
+authors: [ Olafcio ]
+description: A plugin for changing gamemode with commands, but it is very customizable.
+depend: [ PlaceholderAPI ]
+
+commands:
+  finishedgamemodes:
+    description: "Allows you to reload & customize config of the plugin in-game, using commands."
+    aliases:
+      - finishedgm
+      - fgm
+  gamemode:
+    description: "Changes yours or someone's gamemode."
+    aliases:
+      - gm
+  gmt:
+    description: "Toggles yours or someone's gamemode."
+    aliases:
+      - gamemodetoggle
+      - gmtoggle
+  gms:
+    description: "Changes yours or someone's gamemode to survival."
+    aliases:
+      - survival
+      - surv
+      - gm0
+      - gamemodesurvival
+      - gamemode0
+  gma:
+    description: "Changes yours or someone's gamemode to adventure."
+    aliases:
+      - adventure
+      - advent
+      - gm2
+      - gamemodeadventure
+      - gamemode2
+  gmc:
+    description: "Changes yours or someone's gamemode to creative."
+    aliases:
+      - creative
+      - create
+      - gm1
+      - gamemodecreative
+      - gamemode1
+  gmsp:
+    description: "Changes yours or someone's gamemode to spectator."
+    aliases:
+      - spectator
+      - spec
+      - gm3
+      - gamemodespectator
+      - gamemode3

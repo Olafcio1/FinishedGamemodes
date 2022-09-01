@@ -1,0 +1,57 @@
+# FULL DOCUMENTATION of this config.yml is available here: [not made yet]
+
+# Please keep this prefix, this will help me in count of peoples that downloaded this plugin :D (of course you can change it no problem)
+prefix: "&e&lFinishedGamemodes &8» &r"
+
+enable-prefix-in-command-usages: true
+no-permission-message: "&e&lFinishedGamemodes &8» &cNo permission!"
+
+player-not-online: "&4Error: &cPlayer not found: &6[player]"
+gamemode-set-own: "&6Your gamemode has been set to &c[gamemode]&6."
+gamemode-set-other: "&c[player] &6's gamemode has been set to &c[gamemode]§6."
+
+commands:
+  finishedgamemodes:
+    description: "Allows you to reload & customize config of the plugin in-game, using commands."
+    usage: "&cSubcommand not found; do &d&o/fgm help &cfor help."
+    translations:
+      reloaded: "&aReloaded!"
+  gamemode:
+    description: "Changes yours or someone's gamemode."
+    usage: "&7&oUsage: &e/gamemode &7(Survival/Creative/Adventure/Spectator) [player]"
+    translations:
+      gamemodes:
+        survival: "survival"
+        adventure: "adventure"
+        creative: "creative"
+        spectator: "spectator"
+      unknown-gamemode: "&4Error: &cGamemode not found: &6[gamemode]"
+  gmt:
+    description: "Toggles yours or someone's gamemode."
+    usage: "&7&oUsage: &e/gmt &7[<player>]"
+  gms:
+    description: "Changes yours or someone's gamemode to survival."
+    usage: "&7&oUsage: &e/gms &7[<player>]"
+  gma:
+    description: "Changes yours or someone's gamemode to adventure."
+    usage: "&7&oUsage: &e/gma &7[<player>]"
+  gmc:
+    description: "Changes yours or someone's gamemode to creative."
+    usage: "&7&oUsage: &e/gmc &7[<player>]"
+  gmsp:
+    description: "Changes yours or someone's gamemode to spectator."
+    usage: "&7&oUsage: &e/gmsp &7[<player>]"
+
+permissions:
+  main-command: "finishedgm.finishedgamemodes"
+  reload-plugin: "finishedgm.reload"
+  customize-config-ingame: "finishedgm.customize-config"
+  toggle-gamemode: "finishedgm.toggle_gamemode"
+  gamemode-command: "finishedgm.gamemode"
+  toggle-gamemode-command: "finishedgm.toggle_gamemode.command"
+  set-gamemode-survival: "finishedgm.gamemode.gamemode.survival"
+  set-gamemode-adventure: "finishedgm.gamemode.gamemode.adventure"
+  set-gamemode-creative: "finishedgm.gamemode.gamemode.creative"
+  set-gamemode-spectator: "finishedgm.gamemode.gamemode.spectator"
+  set-self-gamemode: "finishedgm.gamemode.self"
+  set-other-gamemode: "finishedgm.gamemode.other"
